@@ -1,9 +1,7 @@
 Утилита для поиска наиболее для вас подходящих телеграм mtproto proxy серверов.
-Вернее, это просто обертка для более удобного использования,
-которая базируется на [telegram-proxy-collector](https://github.com/kort0881/telegram-proxy-collector)
+Вернее, это просто батник-обертка который базируется на [telegram-proxy-collector](https://github.com/kort0881/telegram-proxy-collector), которая упрощает запуск поиска прокси.
 
 Использование:
 1. Скачайте zip-архив: зеленая кнопка `<> Code` -> `Download ZIP`
 2. Разархивируйте в любое место
 3. Запустите от имени администратора `proxy_search.bat`
-

@@ -25,7 +25,7 @@ if not exist "%~dp0%REPOSITORY_FOLDER%" (
     echo Скачивание репозитория telegram-proxy-collector...
     powershell -Command "Invoke-WebRequest -Uri '%REPOSITORY_URL%' -OutFile '%ZIP_FILE%'"
 
-    echo Разархивация репозитория тест: %ZIP_FILE%
+    echo Разархивация репозитория
 
     echo Пробуем метод tar...
     tar -xf "%ZIP_FILE%" -C "%MAIN_DIR%" 2>nul
