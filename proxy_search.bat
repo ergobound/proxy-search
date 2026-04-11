@@ -51,8 +51,6 @@ if not exist "%~dp0%REPOSITORY_FOLDER%" (
     echo Репозиторий telegram-proxy-collector извлечен в соответствующую папку.
 )
 
-
-
 :: Проверяем, есть ли уже скаченный WinPython311
 if not exist "%~dp0%PY_FINAL_FOLDER%" (
 
@@ -71,7 +69,7 @@ if not exist "%~dp0%PY_FINAL_FOLDER%" (
     "WinPython311/python.exe" -m pip install --upgrade pip --no-warn-script-location
 
     echo Подгружаем необходимые модули...
-    "WinPython311/python.exe" -m pip install requests telethon --no-warn-script-location
+    "WinPython311/python.exe" -m pip install requests telethon PySocks --no-warn-script-location
 
     echo Удаление временных файлов и папок...
     del "%EXE%"
@@ -116,6 +114,8 @@ for /f "usebackq skip=5 delims=" %%a in ("%file%") do (
     )
 )
 echo ================================================
-echo Так же можно найти все остальные найденные proxy в txt-файлах внутри папки "verified"
+echo Найти весь список найденных proxy можно в txt-файлах внутри папки "verified"
+echo ================================================
+echo Памятка: Прокси, где secret начинается на "ee" более надежны.
 echo ================================================
 pause
